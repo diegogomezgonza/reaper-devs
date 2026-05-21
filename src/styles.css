@@ -1,0 +1,151 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #0f172a;
+  background-color: #f8fafc;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.page {
+  min-height: 100vh;
+  padding: 1rem;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: clamp(2rem, 6vw, 4rem);
+  letter-spacing: 0.08em;
+}
+
+.card {
+  width: min(100%, 900px);
+  margin: 0 auto;
+  background: #ffffff;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 10px 35px rgba(15, 23, 42, 0.1);
+}
+
+h2,
+h3,
+h4 {
+  margin-top: 0;
+}
+
+form {
+  display: grid;
+  gap: 0.75rem;
+}
+
+label {
+  font-weight: 600;
+}
+
+input,
+button {
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  border: 1px solid #cbd5e1;
+  font-size: 1rem;
+}
+
+button {
+  border: none;
+  background: #2563eb;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #1d4ed8;
+}
+
+.error {
+  color: #b91c1c;
+  margin-bottom: 0;
+}
+
+.role {
+  margin-top: -0.5rem;
+  font-style: italic;
+  color: #475569;
+}
+
+.meetings {
+  margin: 1.5rem 0;
+  border-top: 1px solid #e2e8f0;
+  padding-top: 1.5rem;
+}
+
+.meetings-title-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.meetings-title-row button {
+  width: 2.25rem;
+  height: 2.25rem;
+  padding: 0;
+  font-size: 1.25rem;
+}
+
+.meeting-columns {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+ul {
+  margin: 0;
+  padding-left: 1rem;
+}
+
+.meeting-item {
+  margin-bottom: 0.5rem;
+}
+
+.meeting-link {
+  width: 100%;
+  text-align: left;
+  display: grid;
+  gap: 0.25rem;
+  background: #0ea5e9;
+}
+
+.meeting-link small {
+  opacity: 0.9;
+}
+
+.meeting-form fieldset {
+  border: 1px solid #cbd5e1;
+  border-radius: 0.5rem;
+}
+
+.checkbox-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 500;
+}
+
+.meeting-detail {
+  margin-top: 1rem;
+  padding: 1rem;
+  background: #eff6ff;
+  border-radius: 0.75rem;
+}
